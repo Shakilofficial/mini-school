@@ -80,7 +80,7 @@ A **robust and scalable API** for managing school operations, built with **Expre
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/shakilOfficial/mini-school.git
+git clone https://github.com/Shakilofficial/mini-school.git
 cd mini-school
 ```
 
@@ -212,7 +212,9 @@ docker-compose up -d
 
 I have created a **Postman API documentation JSON** for this project so all routes are ready to test with examples and auth tokens.
 
-You can find the documentation file in the root directory of the project: `mini-school.postman_collection.json`
+You can explore and test all API endpoints using the Postman collection:
+
+[**Open Postman Collection**](https://cgen55.postman.co/workspace/Assignment~3937c878-9731-4041-a5a4-197178344591/collection/34712513-1e508887-0571-4b95-a82c-e11aa8ba5117?action=share&creator=34712513&active-environment=34712513-f1f28a89-0bc5-4e68-a367-30fb6f74dbe4)
 
 ---
 
@@ -273,6 +275,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 **Developed by [Md. Shakil Hossain](mailto:mrshakilhossain@outlook.com)**
 
----
-
-# mini-school
