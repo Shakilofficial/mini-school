@@ -168,9 +168,9 @@ docker-compose up -d
 
 | Method | Endpoint                | Role | Description          |
 | ------ | ----------------------- | ---- | -------------------- |
-| POST   | /api/auth/login         | All  | Login user           |
-| POST   | /api/auth/refresh-token | All  | Refresh access token |
-| POST   | /api/auth/logout        | All  | Logout user          |
+| POST   | /api/v1/auth/login         | All  | Login user           |
+| POST   | /api/v1/auth/refresh-token | All  | Refresh access token |
+| POST   | /api/v1/auth/logout        | All  | Logout user          |
 
 ---
 
@@ -178,9 +178,9 @@ docker-compose up -d
 
 | Method | Endpoint     | Role                  | Description                   |
 | ------ | ------------ | --------------------- | ----------------------------- |
-| GET    | /api/user    | Admin                 | Get all users                 |
-| GET    | /api/user/me | Admin/Teacher/Student | Get profile of logged-in user |
-| POST   | /api/user    | Admin                 | Create a new user             |
+| GET    | /api/v1/user    | Admin                 | Get all users                 |
+| GET    | /api/v1/user/me | Admin/Teacher/Student | Get profile of logged-in user |
+| POST   | /api/v1/user    | Admin                 | Create a new user             |
 
 ---
 
@@ -188,26 +188,23 @@ docker-compose up -d
 
 | Method | Endpoint          | Role          | Description         |
 | ------ | ----------------- | ------------- | ------------------- |
-| POST   | /api/student      | Admin         | Create a student    |
-| GET    | /api/student      | Admin/Teacher | Get all students    |
-| GET    | /api/student/\:id | Admin/Teacher | Get student by ID   |
-| PATCH  | /api/student/\:id | Admin         | Update student info |
-| DELETE | /api/student/\:id | Admin         | Delete student      |
+| POST   | /api/v1/student      | Admin         | Create a student    |
+| GET    | /api/v1/student      | Admin/Teacher | Get all students    |
+| GET    | /api/v1/student/\:id | Admin/Teacher | Get student Details by ID   |
 
 ---
 
 ### Class Endpoints
 
-| Method | Endpoint               | Role          | Description                 |
-| ------ | ---------------------- | ------------- | --------------------------- |
-| POST   | /api/class             | Admin         | Create a new class          |
-| GET    | /api/class             | Admin/Teacher | Get all classes             |
-| GET    | /api/class/\:id        | Admin/Teacher | Get class by ID             |
-| PATCH  | /api/class/\:id        | Admin         | Update class                |
-| DELETE | /api/class/\:id        | Admin         | Delete class                |
-| POST   | /api/class/\:id/enroll | Admin/Teacher | Enroll a student in a class |
+| Method | Endpoint                    | Role          | Description                          |
+| ------ | --------------------------- | ------------- | ------------------------------------ |
+| POST   | /api/v1/class               | Admin         | Create a new class                   |
+| GET    | /api/v1/class               | Admin/Teacher | Get all classes                      |
+| POST   | /api/v1/class/\:id/enroll   | Admin/Teacher | Enroll a student in a class          |
+| GET    | /api/v1/class/\:id/students | Admin/Teacher | Get all students of a specific class |
 
 ---
+
 
 ## API Documentation
 
